@@ -3,7 +3,7 @@ import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // core components
-import { Featured } from "components/Featured";
+// import { Featured } from "components/Featured";
 import DemoFooter from "components/Footers/DemoFooter.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -51,7 +51,7 @@ const Home = () => (
     <IndexNavbar />
     <IndexHeader />
     <div className="main">
-      <Featured />
+      {/* <Featured /> */}
       <SectionCarousel />
       <SectionButtons />
       <SectionNavbars />
