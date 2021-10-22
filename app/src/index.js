@@ -8,8 +8,10 @@ import reportWebVitals from "./reportWebVitals";
 
 // import "./global.scss";
 
+// styles
+// import "assets/css/bootstrap.min.css";
 import "assets/scss/paper-kit.scss";
-// import "assets/css/paper-kit.css";
+import "assets/css/paper-kit.css";
 import "assets/demo/demo.css";
 
 ReactDOM.render(
