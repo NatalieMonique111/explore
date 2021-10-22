@@ -52,7 +52,6 @@ const Home = () => (
     <IndexHeader />
     <div className="main">
       {/* <Featured /> */}
-      <SectionCarousel />
       <SectionButtons />
       <SectionNavbars />
       <SectionNavigation />

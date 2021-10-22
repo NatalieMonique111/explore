@@ -36,9 +36,9 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
+import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -328,7 +328,7 @@ function LandingPage() {
                 <Form className="contact-form">
                   <Row>
                     <Col md="6">
-                      <label>Name</label>
+                      <label> Name</label>
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -339,7 +339,7 @@ function LandingPage() {
                       </InputGroup>
                     </Col>
                     <Col md="6">
-                      <label>Email</label>
+                      <label> Email</label>
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -350,7 +350,7 @@ function LandingPage() {
                       </InputGroup>
                     </Col>
                   </Row>
-                  <label>Message</label>
+                  <label> Message</label>
                   <Input
                     placeholder="Tell us your thoughts and feelings..."
                     type="textarea"
