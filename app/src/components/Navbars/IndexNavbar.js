@@ -22,7 +22,6 @@ import React from "react";
 import classnames from "classnames";
 // reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -71,9 +70,7 @@ function IndexNavbar() {
             href="/index"
             target="_blank"
             title="Coded by Creative Tim"
-          >
-            Paper Kit React
-          </NavbarBrand>
+          ></NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
@@ -145,14 +142,14 @@ function IndexNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <Button
+              {/* <Button
                 className="btn-round"
                 color="danger"
                 href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-index-navbar"
                 target="_blank"
               >
                 <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
-              </Button>
+              </Button> */}
             </NavItem>
           </Nav>
         </Collapse>

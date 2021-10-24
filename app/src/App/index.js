@@ -50,6 +50,24 @@ const Home = () => (
   <>
     <IndexNavbar />
     <IndexHeader />
+    <section>
+      <div style={{ paddingTop: 60 }} className="text-center">
+        <h1>Featured UNESCO Heritage Sites</h1>
+      </div>
+    </section>
+    <SectionCarousel />
+    <div>
+      <SectionDark />
+      <DemoFooter />
+    </div>
+  </>
+);
+
+const Dashboard = () => (
+  <>
+    <h1>Dashboard</h1>
+    <IndexNavbar />
+    <IndexHeader />
     <div className="main">
       {/* <Featured /> */}
       <SectionButtons />
@@ -67,12 +85,6 @@ const Home = () => (
       <SectionDownload />
       <DemoFooter />
     </div>
-  </>
-);
-
-const Dashboard = () => (
-  <>
-    <h1>Dashboard</h1>
     <Tasks />
   </>
 );

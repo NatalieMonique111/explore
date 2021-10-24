@@ -30,12 +30,21 @@ function SectionDark() {
         <Container>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
-              <h2 className="title">Completed with examples</h2>
+              {/* <h2 className="title">Why UNESCO?</h2> */}
               <p className="description">
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. More importantly, looking at them will give you a picture of
-                what you can built with this powerful kit.
+                <blockquote className="blockquote">
+                  <p className="mb-0">
+                    "Heritage is our legacy from the past, what we live with
+                    today, and what we pass on to future generations. Our
+                    cultural and natural heritage are both irreplaceable sources
+                    of life and inspiration.”
+                  </p>
+                  <br />
+                  <footer className="blockquote-footer">
+                    UNESCO World Heritage Centre{" "}
+                    <cite title="source Title">World Heritage</cite>
+                  </footer>
+                </blockquote>
               </p>
             </Col>
           </Row>

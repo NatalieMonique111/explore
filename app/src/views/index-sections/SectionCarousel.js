@@ -34,19 +34,22 @@ import {
 
 const items = [
   {
-    src: require("assets/img/soroush-karimi.jpg").default,
-    altText: "Somewhere",
-    caption: "Somewhere",
+    src: require("assets/img/brihadishvara.jpeg").default,
+    altText: "",
+    captionHeader: "Brihadishwara Temple",
+    caption: "Tamil Nadu, India",
   },
   {
-    src: require("assets/img/federico-beccari.jpg").default,
+    src: require("assets/img/pyramids-giza.jpeg").default,
     altText: "Somewhere else",
-    caption: "Somewhere else",
+    captionHeader: "Pyramids",
+    caption: "Giza, Egypt",
   },
   {
-    src: require("assets/img/joshua-stannard.jpg").default,
+    src: require("assets/img/kilimanjaro.jpeg").default,
     altText: "Here it is",
-    caption: "Here it is",
+    captionHeader: "Kilimanjaro",
+    caption: "Tanzania",
   },
 ];
 
@@ -97,10 +100,14 @@ function SectionCarousel() {
                         onExited={onExited}
                         key={item.src}
                       >
+                        <CarouselCaption
+                          captionText={item.caption}
+                          captionHeader={item.captionHeader}
+                        />
                         <img src={item.src} alt={item.altText} />
                         <CarouselCaption
                           captionText={item.caption}
-                          captionHeader=""
+                          captionHeader={item.captionHeader}
                         />
                       </CarouselItem>
                     );
