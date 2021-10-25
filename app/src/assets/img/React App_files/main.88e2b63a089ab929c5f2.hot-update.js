@@ -1,0 +1,15 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/views/index-sections/SectionNavbars.js":
+/*!****************************************************!*\
+  !*** ./src/views/index-sections/SectionNavbars.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/natalielotuslight/Documents/Projects/explore/app/src/views/index-sections/SectionNavbars.js: Expected corresponding JSX closing tag for <Navbar>. (66:16)\n\n\u001b[0m \u001b[90m 64 |\u001b[39m \u001b[90m                  <span className=\"navbar-toggler-bar\" />\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 65 |\u001b[39m \u001b[90m                  <span className=\"navbar-toggler-bar\" /> */\u001b[39m}\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mbutton\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 67 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33mUncontrolledCollapse\u001b[39m navbar toggler\u001b[33m=\u001b[39m\u001b[32m\"#navbar-menu\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 68 |\u001b[39m                   \u001b[33m<\u001b[39m\u001b[33mNav\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"mr-auto\"\u001b[39m navbar\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 69 |\u001b[39m                     {\u001b[90m/* <NavItem>\u001b[39m\u001b[0m\n    at Object._raise (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:541:17)\n    at Object.raiseWithData (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:534:17)\n    at Object.raise (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:495:17)\n    at Object.jsxParseElementAt (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:7418:16)\n    at Object.jsxParseElementAt (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:7386:32)\n    at Object.jsxParseElementAt (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:7386:32)\n    at Object.jsxParseElementAt (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:7386:32)\n    at Object.jsxParseElementAt (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:7386:32)\n    at Object.jsxParseElementAt (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:7386:32)\n    at Object.jsxParseElement (/Users/natalielotuslight/Documents/Projects/explore/app/node_modules/@babel/parser/lib/index.js:7444:17)");
+
+/***/ })
+
+})
+//# sourceMappingURL=main.88e2b63a089ab929c5f2.hot-update.js.map

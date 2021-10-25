@@ -25,10 +25,10 @@ import {
   DropdownMenu,
   DropdownItem,
   UncontrolledDropdown,
-  NavbarBrand,
+  // NavbarBrand,
   Navbar,
-  NavItem,
-  NavLink,
+  // NavItem,
+  // NavLink,
   Nav,
   Container,
   Row,
@@ -38,18 +38,24 @@ import {
 function SectionNavbars() {
   return (
     <>
-      <div className="section section-navbars">
+      <div className="section section-navbars ">
         <Container id="menu-dropdown">
           <div className="title">
-            <h3>Menu</h3>
+            <h2>Select a Region</h2>
           </div>
           <br />
-          <Row>
-            <Col md="6">
+          <Row
+            style={{
+              justifyContent: "center",
+              alignItems: "center",
+              display: "flex",
+            }}
+          >
+            <Col md="1.5">
               <Navbar className="bg-primary" expand="lg">
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
+                {/* <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                   Menu
-                </NavbarBrand>
+                </NavbarBrand> */}
                 <button
                   aria-controls="navbarSupportedContent"
                   aria-expanded={false}
@@ -66,7 +72,7 @@ function SectionNavbars() {
                 </button>
                 <UncontrolledCollapse navbar toggler="#navbar-menu">
                   <Nav className="mr-auto" navbar>
-                    <NavItem>
+                    {/* <NavItem>
                       <NavLink
                         href="#pablo"
                         onClick={(e) => e.preventDefault()}
@@ -81,7 +87,7 @@ function SectionNavbars() {
                       >
                         Link
                       </NavLink>
-                    </NavItem>
+                    </NavItem> */}
                     <UncontrolledDropdown nav inNavbar>
                       <DropdownToggle
                         aria-expanded={false}
@@ -95,46 +101,49 @@ function SectionNavbars() {
                         onClick={(e) => e.preventDefault()}
                         role="button"
                       >
-                        Dropdown
+                        Region
                       </DropdownToggle>
                       <DropdownMenu
                         aria-labelledby="dropdownMenuButton"
                         className="dropdown-info"
                       >
                         <DropdownItem header tag="span">
-                          Dropdown header
+                          Region
                         </DropdownItem>
+
                         <DropdownItem
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Action
+                          Africa
                         </DropdownItem>
+
                         <DropdownItem
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Another action
+                          Arab States
                         </DropdownItem>
+
                         <DropdownItem
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Something else here
+                          Asia and Oceania
                         </DropdownItem>
-                        <DropdownItem divider />
+
                         <DropdownItem
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Separated link
+                          Europe and North America
                         </DropdownItem>
-                        <DropdownItem divider />
+
                         <DropdownItem
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Another separated link
+                          Latin America and the Caribbean
                         </DropdownItem>
                       </DropdownMenu>
                     </UncontrolledDropdown>
@@ -142,7 +151,7 @@ function SectionNavbars() {
                 </UncontrolledCollapse>
               </Navbar>
             </Col>
-            <Col md="6">
+            {/* <Col md="6">
               <Navbar className="bg-danger" expand="lg">
                 <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                   Icons
@@ -227,7 +236,7 @@ function SectionNavbars() {
                   </Nav>
                 </UncontrolledCollapse>
               </Navbar>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </div>

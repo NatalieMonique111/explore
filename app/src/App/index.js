@@ -50,14 +50,17 @@ const Home = () => (
   <>
     <IndexNavbar />
     <IndexHeader />
-    <section>
-      <div style={{ paddingTop: 60 }} className="text-center">
-        <h1>Featured UNESCO Heritage Sites</h1>
-      </div>
+    <section style={{ paddingTop: 100 }}>
+      <h2 className="text-center">Featured UNESCO Sites</h2>
     </section>
     <SectionCarousel />
+    <section className="text-center">
+      <SectionNavbars />
+    </section>
     <div>
       <SectionDark />
+
+      <SectionLogin />
       <DemoFooter />
     </div>
   </>

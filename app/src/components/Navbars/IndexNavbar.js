@@ -96,8 +96,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Twitter"
               >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
+                <p className="d-lg-none">Twitter</p> Africa
               </NavLink>
             </NavItem>
             <NavItem>
@@ -107,8 +106,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="Like us on Facebook"
               >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
+                <p className="d-lg-none">Facebook</p> Arab States
               </NavLink>
             </NavItem>
             <NavItem>
@@ -118,8 +116,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Instagram"
               >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
+                <p className="d-lg-none">Instagram</p> Europe and North America
               </NavLink>
             </NavItem>
             <NavItem>
@@ -129,7 +126,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="Star on GitHub"
               >
-                <i className="fa fa-github" />
+                Asia and Oceania
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
             </NavItem>
@@ -138,7 +135,7 @@ function IndexNavbar() {
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
                 target="_blank"
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+                Latin America and the Caribbean
               </NavLink>
             </NavItem>
             <NavItem>

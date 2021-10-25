@@ -49,7 +49,7 @@ function SectionLogin() {
           <Row>
             <Col className="mx-auto" lg="4" md="6">
               <Card className="card-register">
-                <h3 className="title mx-auto">Welcome</h3>
+                <h3 className="title mx-auto">Newsletter Sign Up</h3>
                 <div className="social-line text-center">
                   <Button
                     className="btn-neutral btn-just-icon mt-0"
@@ -86,7 +86,7 @@ function SectionLogin() {
                     </InputGroupAddon>
                     <Input placeholder="Email" type="email" />
                   </InputGroup>
-                  <label>Password</label>
+                  {/* <label>Password</label>
                   <InputGroup className="form-group-no-border">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
@@ -94,7 +94,7 @@ function SectionLogin() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input placeholder="Password" type="password" />
-                  </InputGroup>
+                  </InputGroup> */}
                   <Button
                     block
                     className="btn-round"
@@ -104,7 +104,7 @@ function SectionLogin() {
                     Register
                   </Button>
                 </Form>
-                <div className="forgot">
+                {/* <div className="forgot">
                   <Button
                     className="btn-link"
                     color="danger"
@@ -113,7 +113,7 @@ function SectionLogin() {
                   >
                     Forgot password?
                   </Button>
-                </div>
+                </div> */}
               </Card>
               <div className="col text-center">
                 <Button

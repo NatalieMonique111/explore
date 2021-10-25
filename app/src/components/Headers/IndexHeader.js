@@ -21,6 +21,7 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
+import SectionNavbars from "views/index-sections/SectionNavbars";
 
 // core components
 
@@ -53,10 +54,11 @@ function IndexHeader() {
               </div>
             </div>
             <h2 className="presentation-subtitle text-center">
-              Take a global journey through UNESCO world heritage sites
+              Take a journey through UNESCO world heritage sites
             </h2>
           </Container>
         </div>
+
         <div
           className="moving-clouds"
           style={{
