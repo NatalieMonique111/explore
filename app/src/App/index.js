@@ -26,7 +26,7 @@ import SectionProgress from "views/index-sections/SectionProgress.js";
 import SectionTypography from "views/index-sections/SectionTypography.js";
 
 // Keep as example for e2e requests, then delete
-import Tasks from "../Tasks";
+// import Tasks from "../Tasks";
 
 // import styles from "./styles.module.scss";
 
