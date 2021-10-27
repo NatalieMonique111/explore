@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /*!
 
 =========================================================
@@ -37,7 +38,7 @@ import {
 
 // core components
 import DemoFooter from "components/Footers/DemoFooter.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+import SitePageHeader from "components/Headers/SitePageHeader.js";
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 
 function LandingPage() {
@@ -51,7 +52,7 @@ function LandingPage() {
   return (
     <>
       <ExamplesNavbar />
-      <LandingPageHeader />
+      <SitePageHeader />
       <div className="main">
         <div className="section text-center">
           <Container>

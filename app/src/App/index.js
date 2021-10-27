@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 // core components
 // import { Featured } from "components/Featured";
 
-import Gallery from "Gallery/Gallery";
 import Region from "Region";
 import Site from "Site";
 import DemoFooter from "components/Footers/DemoFooter.js";
@@ -47,7 +46,7 @@ const App = () => (
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/region" element={<Region />} />
         <Route path="/site" element={<Site />} />
-        <Route path="/gallery" element={<Gallery />} />
+
         {/* <Route path="/arab-states" element={<Dashboard />} />
         <Route path="/europe-america" element={<Dashboard />} />
         <Route path="/asia-oceania" element={<Dashboard />} />

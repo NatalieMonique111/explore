@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
 
-import Gallery from "react-grid-gallery";
-// reactstrap components
 import {
   Button,
   Card,
@@ -19,9 +17,11 @@ import {
   Col,
 } from "reactstrap";
 
+// reactstrap components
+import Gallery from "Gallery/Gallery.js";
 // core components
 import DemoFooter from "components/Footers/DemoFooter.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+import SitePageHeader from "components/Headers/SitePageHeader.js";
 // import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import SectionCarousel from "views/index-sections/SectionCarousel";
@@ -35,42 +35,42 @@ function Site() {
     };
   });
 
-  const IMAGES = [
-    {
-      src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-      thumbnail:
-        "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 174,
-      isSelected: true,
-      caption: "After Rain (Jeshu John - designerspics.com)",
-    },
-    {
-      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-      thumbnail:
-        "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-      tags: [
-        { value: "Ocean", title: "Ocean" },
-        { value: "People", title: "People" },
-      ],
-      caption: "Boats (Jeshu John - designerspics.com)",
-    },
+  // const IMAGES = [
+  //   {
+  //     src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+  //     thumbnail:
+  //       "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+  //     thumbnailWidth: 320,
+  //     thumbnailHeight: 174,
+  //     isSelected: true,
+  //     caption: "After Rain (Jeshu John - designerspics.com)",
+  //   },
+  //   {
+  //     src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+  //     thumbnail:
+  //       "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+  //     thumbnailWidth: 320,
+  //     thumbnailHeight: 212,
+  //     tags: [
+  //       { value: "Ocean", title: "Ocean" },
+  //       { value: "People", title: "People" },
+  //     ],
+  //     caption: "Boats (Jeshu John - designerspics.com)",
+  //   },
 
-    {
-      src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-      thumbnail:
-        "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-    },
-  ];
+  //   {
+  //     src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+  //     thumbnail:
+  //       "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+  //     thumbnailWidth: 320,
+  //     thumbnailHeight: 212,
+  //   },
+  // ];
 
   return (
     <>
       <IndexNavbar />
-      <LandingPageHeader />
+      <SitePageHeader />
       <div className="main">
         <div className="section text-center">
           <Container>
@@ -357,7 +357,6 @@ function Site() {
 
         <div
           className="section pt-o"
-          id="carousel"
           style={{
             backgroundColor: "transparent",
             marginTop: 10,
@@ -367,11 +366,9 @@ function Site() {
         >
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <Card className="page-carousel">
-                  <Gallery images={IMAGES} />
-                </Card>
-              </Col>
+              <Card>
+                <Gallery />
+              </Card>
             </Row>
           </Container>
         </div>

@@ -23,7 +23,7 @@ import { Button, Container } from "reactstrap";
 
 // core components
 
-function LandingPageHeader() {
+function SitePageHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -77,4 +77,4 @@ function LandingPageHeader() {
   );
 }
 
-export default LandingPageHeader;
+export default SitePageHeader;
