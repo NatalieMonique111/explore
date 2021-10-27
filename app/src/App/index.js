@@ -101,7 +101,7 @@ const Dashboard = () => (
       <SectionDownload />
       <DemoFooter />
     </div>
-    <Tasks />
+    {/* <Tasks /> */}
   </>
 );
 
