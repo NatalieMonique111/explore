@@ -78,7 +78,16 @@ function SectionCarousel() {
   };
   return (
     <>
-      <div className="section pt-o" id="carousel">
+      <div
+        className="section pt-o"
+        id="carousel"
+        style={{
+          backgroundColor: "transparent",
+          marginTop: 10,
+          paddingTop: 20,
+          paddingBottom: 10,
+        }}
+      >
         <Container>
           <Row>
             <Col className="ml-auto mr-auto" md="8">

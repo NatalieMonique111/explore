@@ -4,6 +4,10 @@ import { Routes, Route } from "react-router-dom";
 
 // core components
 // import { Featured } from "components/Featured";
+
+import Gallery from "Gallery/Gallery";
+import Region from "Region";
+import Site from "Site";
 import DemoFooter from "components/Footers/DemoFooter.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -41,6 +45,13 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/region" element={<Region />} />
+        <Route path="/site" element={<Site />} />
+        <Route path="/gallery" element={<Gallery />} />
+        {/* <Route path="/arab-states" element={<Dashboard />} />
+        <Route path="/europe-america" element={<Dashboard />} />
+        <Route path="/asia-oceania" element={<Dashboard />} />
+        <Route path="/latin-caribbean" element={<Dashboard />} /> */}
       </Routes>
     </main>
   </>
@@ -50,16 +61,15 @@ const Home = () => (
   <>
     <IndexNavbar />
     <IndexHeader />
-    <section style={{ paddingTop: 100 }}>
+    <section style={{ paddingTop: 50 }}>
       <h2 className="text-center">Featured UNESCO Sites</h2>
     </section>
     <SectionCarousel />
-    <section className="text-center">
-      <SectionNavbars />
-    </section>
     <div>
+      <section className="text-center">
+        <SectionNavbars />
+      </section>
       <SectionDark />
-
       <SectionLogin />
       <DemoFooter />
     </div>

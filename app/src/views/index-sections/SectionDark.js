@@ -29,7 +29,11 @@ function SectionDark() {
       <div className="section section-dark">
         <Container>
           <Row>
-            <Col className="ml-auto mr-auto text-center" md="8">
+            <Col
+              className="ml-auto mr-auto text-center"
+              md="8"
+              style={{ paddingTop: 40 }}
+            >
               {/* <h2 className="title">Why UNESCO?</h2> */}
               <p className="description">
                 <blockquote className="blockquote">

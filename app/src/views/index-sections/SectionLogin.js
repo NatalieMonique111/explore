@@ -77,6 +77,15 @@ function SectionLogin() {
                   </Button>
                 </div>
                 <Form className="register-form">
+                  <label>Name</label>
+                  <InputGroup className="form-group-no-border">
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText>
+                        <i className="nc-icon nc-single-02" />
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input placeholder="Name" type="text" />
+                  </InputGroup>
                   <label>Email</label>
                   <InputGroup className="form-group-no-border">
                     <InputGroupAddon addonType="prepend">
@@ -86,15 +95,6 @@ function SectionLogin() {
                     </InputGroupAddon>
                     <Input placeholder="Email" type="email" />
                   </InputGroup>
-                  {/* <label>Password</label>
-                  <InputGroup className="form-group-no-border">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="nc-icon nc-key-25" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Password" type="password" />
-                  </InputGroup> */}
                   <Button
                     block
                     className="btn-round"
@@ -115,7 +115,7 @@ function SectionLogin() {
                   </Button>
                 </div> */}
               </Card>
-              <div className="col text-center">
+              {/* <div className="col text-center">
                 <Button
                   className="btn-round"
                   outline
@@ -126,7 +126,7 @@ function SectionLogin() {
                 >
                   View Register Page
                 </Button>
-              </div>
+              </div> */}
             </Col>
           </Row>
         </Container>
