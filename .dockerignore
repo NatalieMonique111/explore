@@ -1,6 +1,7 @@
 *
+!app/jsconfig.json
 !app/package*.json
 !app/public
 !app/src
-!server/src/*.mjs
 !server/package*.json
+!server/src/*.mjs
