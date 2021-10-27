@@ -77,6 +77,10 @@ const Home = () => (
 
 const Dashboard = () => (
   <>
+    <header>
+      <h1>{process.env.REACT_APP_TITLE}</h1>
+      <p>{process.env.REACT_APP_SUBTITLE}</p>
+    </header>
     <h1>Dashboard</h1>
     <IndexNavbar />
     <IndexHeader />
