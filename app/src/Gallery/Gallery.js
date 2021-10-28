@@ -9,7 +9,7 @@ const Gallery = () => {
     const data = {
       method: "flickr.photos.search",
       api_key: yourApiKey,
-      text: "cat", // Search Text
+      text: "boudha", // Search Text
       sort: "interestingness-desc",
       per_page: 12,
       license: "4",
