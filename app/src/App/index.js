@@ -58,10 +58,6 @@ const App = () => (
 
 const Home = () => (
   <>
-    <header>
-      <h1>{process.env.REACT_APP_TITLE}</h1>
-      <p>{process.env.REACT_APP_SUBTITLE}</p>
-    </header>
     <IndexNavbar />
     <IndexHeader />
     <section style={{ paddingTop: 50 }}>
@@ -82,6 +78,10 @@ const Home = () => (
 const Dashboard = () => (
   <>
     <h1>Dashboard</h1>
+    <header>
+      <h1>{process.env.REACT_APP_TITLE}</h1>
+      <p>{process.env.REACT_APP_SUBTITLE}</p>
+    </header>
     <IndexNavbar />
     <IndexHeader />
     <div className="main">
