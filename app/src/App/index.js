@@ -26,7 +26,7 @@ import SectionProgress from "views/index-sections/SectionProgress.js";
 import SectionTypography from "views/index-sections/SectionTypography.js";
 
 // Keep as example for e2e requests, then delete
-import Tasks from "../Tasks";
+// import Tasks from "../Tasks";
 
 // import styles from "./styles.module.scss";
 
@@ -58,10 +58,6 @@ const App = () => (
 
 const Home = () => (
   <>
-    <header>
-      <h1>{process.env.REACT_APP_TITLE}</h1>
-      <p>{process.env.REACT_APP_SUBTITLE}</p>
-    </header>
     <IndexNavbar />
     <IndexHeader />
     <section style={{ paddingTop: 50 }}>
@@ -82,6 +78,10 @@ const Home = () => (
 const Dashboard = () => (
   <>
     <h1>Dashboard</h1>
+    <header>
+      <h1>{process.env.REACT_APP_TITLE}</h1>
+      <p>{process.env.REACT_APP_SUBTITLE}</p>
+    </header>
     <IndexNavbar />
     <IndexHeader />
     <div className="main">
@@ -101,7 +101,7 @@ const Dashboard = () => (
       <SectionDownload />
       <DemoFooter />
     </div>
-    <Tasks />
+    {/* <Tasks /> */}
   </>
 );
 
