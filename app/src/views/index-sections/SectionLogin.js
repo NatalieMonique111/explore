@@ -21,15 +21,15 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
+  // Button,
   Card,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  // Form,
+  // Input,
+  // InputGroupAddon,
+  // InputGroupText,
+  // InputGroup,
   Container,
-  Row,
+  // Row,
   Col,
 } from "reactstrap";
 
@@ -46,89 +46,29 @@ function SectionLogin() {
         }}
       >
         <Container>
-          <Row>
-            <Col className="mx-auto" lg="4" md="6">
-              <Card className="card-register">
-                <h3 className="title mx-auto">Newsletter Sign Up</h3>
-                <div className="social-line text-center">
-                  <Button
-                    className="btn-neutral btn-just-icon mt-0"
-                    color="facebook"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <i className="fa fa-facebook-square" />
-                  </Button>
-                  <Button
-                    className="btn-neutral btn-just-icon mt-0 ml-1"
-                    color="google"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <i className="fa fa-google-plus" />
-                  </Button>
-                  <Button
-                    className="btn-neutral btn-just-icon mt-0 ml-1"
-                    color="twitter"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <i className="fa fa-twitter" />
-                  </Button>
-                </div>
-                <Form className="register-form">
-                  <label>Name</label>
-                  <InputGroup className="form-group-no-border">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="nc-icon nc-single-02" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Name" type="text" />
-                  </InputGroup>
-                  <label>Email</label>
-                  <InputGroup className="form-group-no-border">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="nc-icon nc-email-85" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Email" type="email" />
-                  </InputGroup>
-                  <Button
-                    block
-                    className="btn-round"
-                    color="danger"
-                    type="button"
-                  >
-                    Register
-                  </Button>
-                </Form>
-                {/* <div className="forgot">
-                  <Button
-                    className="btn-link"
-                    color="danger"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    Forgot password?
-                  </Button>
-                </div> */}
-              </Card>
-              {/* <div className="col text-center">
-                <Button
-                  className="btn-round"
-                  outline
-                  color="neutral"
-                  href="/register-page"
-                  size="lg"
-                  target="_blank"
+          <Col className="ml-auto mr-auto text-center">
+            <Card style={{ backgroundColor: "transparent", color: "white" }}>
+              <br />
+              <blockquote className="blockquote">
+                <br />
+                <p className="mb-0" style={{ color: "white" }}>
+                  "Heritage is our legacy from the past, what we live with
+                  today, and what we pass on to future generations. Our cultural
+                  and natural heritage are both irreplaceable sources of life
+                  and inspiration.”
+                </p>
+                <br />
+
+                <footer
+                  // style={{ color: "white" }}
+                  className="blockquote-footer"
                 >
-                  View Register Page
-                </Button>
-              </div> */}
-            </Col>
-          </Row>
+                  UNESCO World Heritage Centre{" "}
+                  <cite title="source Title">World Heritage</cite>
+                </footer>
+              </blockquote>
+            </Card>
+          </Col>
         </Container>
       </div>{" "}
     </>
