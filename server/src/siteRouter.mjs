@@ -8,3 +8,5 @@ siteRouter.get("/", async (request, response) => {
   const sites = await db.getSites();
   response.json(sites);
 });
+
+export default siteRouter;

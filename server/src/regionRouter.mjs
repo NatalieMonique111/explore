@@ -8,3 +8,5 @@ regionRouter.get("/", async (request, response) => {
   const regions = await db.getRegions();
   response.json(regions);
 });
+
+export default regionRouter;
