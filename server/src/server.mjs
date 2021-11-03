@@ -1,8 +1,8 @@
 import express from "express";
 import mime from "mime-types";
 
-import regionRouter from "./regionRouter";
-import siteRouter from "./siteRouter";
+import regionRouter from "./regionRouter.mjs";
+import siteRouter from "./siteRouter.mjs";
 import taskRouter from "./taskRouter.mjs";
 
 const app = express();
