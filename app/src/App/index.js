@@ -3,7 +3,6 @@ import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // core components
-// import { Featured } from "components/Featured";
 
 import Region from "Region";
 import Site from "Site";
@@ -44,13 +43,8 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/region" element={<Region />} />
-        <Route path="/site" element={<Site />} />
-
-        {/* <Route path="/arab-states" element={<Dashboard />} />
-        <Route path="/europe-america" element={<Dashboard />} />
-        <Route path="/asia-oceania" element={<Dashboard />} />
-        <Route path="/latin-caribbean" element={<Dashboard />} /> */}
+        <Route path="/region/:code" element={<Region />} />
+        <Route path="/site/:id" element={<Site />} />
       </Routes>
     </main>
   </>
@@ -85,7 +79,6 @@ const Dashboard = () => (
     <IndexNavbar />
     <IndexHeader />
     <div className="main">
-      {/* <Featured /> */}
       <SectionButtons />
       <SectionNavbars />
       <SectionNavigation />

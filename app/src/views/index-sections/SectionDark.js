@@ -19,7 +19,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+// import { Container, Row, Col } from "reactstrap";
 
 // core components
 
@@ -27,32 +27,27 @@ function SectionDark() {
   return (
     <>
       <div className="section section-dark">
-        <Container>
+        {/* <Container>
           <Row>
             <Col
               className="ml-auto mr-auto text-center"
               md="8"
               style={{ paddingTop: 40 }}
             >
-              {/* <h2 className="title">Why UNESCO?</h2> */}
+              <h2 className="title">Title</h2>
+              <br />
               <p className="description">
-                <blockquote className="blockquote">
-                  <p className="mb-0">
-                    "Heritage is our legacy from the past, what we live with
-                    today, and what we pass on to future generations. Our
-                    cultural and natural heritage are both irreplaceable sources
-                    of life and inspiration.”
-                  </p>
-                  <br />
-                  <footer className="blockquote-footer">
-                    UNESCO World Heritage Centre{" "}
-                    <cite title="source Title">World Heritage</cite>
-                  </footer>
-                </blockquote>
+                <p className="mb-0" style={{ color: "white" }}>
+                  "Heritage is our legacy from the past, what we live with
+                  today, and what we pass on to future generations. Our cultural
+                  and natural heritage are both irreplaceable sources of life
+                  and inspiration.”
+                </p>
+                <br />
               </p>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </div>
     </>
   );

@@ -72,22 +72,6 @@ function SectionNavbars() {
                 </button>
                 <UncontrolledCollapse navbar toggler="#navbar-menu">
                   <Nav className="mr-auto" navbar>
-                    {/* <NavItem>
-                      <NavLink
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        Link
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        Link
-                      </NavLink>
-                    </NavItem> */}
                     <UncontrolledDropdown nav inNavbar>
                       <DropdownToggle
                         aria-expanded={false}
@@ -112,36 +96,36 @@ function SectionNavbars() {
                         </DropdownItem>
 
                         <DropdownItem
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="/region/afr"
+                          // onClick={(e) => e.preventDefault()}
                         >
                           Africa
                         </DropdownItem>
 
                         <DropdownItem
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="/region/arb"
+                          // onClick={(e) => e.preventDefault()}
                         >
                           Arab States
                         </DropdownItem>
 
                         <DropdownItem
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="/region/asa"
+                          // onClick={(e) => e.preventDefault()}
                         >
                           Asia and Oceania
                         </DropdownItem>
 
                         <DropdownItem
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="/region/ena"
+                          // onClick={(e) => e.preventDefault()}
                         >
                           Europe and North America
                         </DropdownItem>
 
                         <DropdownItem
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="/region/lat"
+                          // onClick={(e) => e.preventDefault()}
                         >
                           Latin America and the Caribbean
                         </DropdownItem>
@@ -151,92 +135,6 @@ function SectionNavbars() {
                 </UncontrolledCollapse>
               </Navbar>
             </Col>
-            {/* <Col md="6">
-              <Navbar className="bg-danger" expand="lg">
-                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Icons
-                </NavbarBrand>
-                <button
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded={false}
-                  aria-label="Toggle navigation"
-                  className="navbar-toggler navbar-toggler-right"
-                  data-target="#navbar-menu-icon"
-                  data-toggle="collapse"
-                  id="navbar-menu-icon"
-                  type="button"
-                >
-                  <span className="navbar-toggler-bar" />
-                  <span className="navbar-toggler-bar" />
-                  <span className="navbar-toggler-bar" />
-                </button>
-                <UncontrolledCollapse navbar toggler="#navbar-menu-icon">
-                  <Nav className="ml-auto" navbar>
-                    <NavItem className="active">
-                      <NavLink
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i aria-hidden={true} className="nc-icon nc-email-85" />
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i
-                          aria-hidden={true}
-                          className="nc-icon nc-single-02"
-                        />
-                      </NavLink>
-                    </NavItem>
-                    <UncontrolledDropdown nav inNavbar>
-                      <DropdownToggle
-                        aria-expanded={false}
-                        aria-haspopup={true}
-                        caret
-                        color="default"
-                        data-toggle="dropdown"
-                        href="#pablo"
-                        nav
-                        onClick={(e) => e.preventDefault()}
-                        role="button"
-                      >
-                        <i
-                          aria-hidden={true}
-                          className="nc-icon nc-settings-gear-65"
-                        />
-                      </DropdownToggle>
-                      <DropdownMenu className="dropdown-danger" right>
-                        <DropdownItem header tag="span">
-                          Dropdown header
-                        </DropdownItem>
-                        <DropdownItem
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Another action
-                        </DropdownItem>
-                        <DropdownItem
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Something else here
-                        </DropdownItem>
-                        <DropdownItem divider />
-                        <DropdownItem
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Separated link
-                        </DropdownItem>
-                      </DropdownMenu>
-                    </UncontrolledDropdown>
-                  </Nav>
-                </UncontrolledCollapse>
-              </Navbar>
-            </Col> */}
           </Row>
         </Container>
       </div>

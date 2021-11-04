@@ -1,11 +1,15 @@
 import express from "express";
 import mime from "mime-types";
 
+import regionRouter from "./regionRouter.mjs";
+import siteRouter from "./siteRouter.mjs";
 import taskRouter from "./taskRouter.mjs";
 
 const app = express();
 
 app.use("/api/tasks", taskRouter);
+app.use("/api/regions", regionRouter);
+app.use("/api/regions", siteRouter);
 
 // Do not comment out or delete this end point. The React development server
 // won't start until it pings this end point successfully.

@@ -4,12 +4,13 @@ const Gallery = () => {
   const [testImg, setTestImg] = React.useState("");
 
   React.useEffect(() => {
-    const yourApiKey = "a79d815bc8a425b6e16b2436606de305";
+    const yourApiKey = "";
+    console.log("API_KEY:", process.env.API_KEY);
 
     const data = {
       method: "flickr.photos.search",
       api_key: yourApiKey,
-      text: "boudha", // Search Text
+      text: "UNESCO", // Search Text
       sort: "interestingness-desc",
       per_page: 12,
       license: "4",
@@ -48,8 +49,8 @@ const Gallery = () => {
           <a href={testImg}>
             <img
               src={testImg}
-              alt="Lights"
-              style={{ width: 150, height: 150 }}
+              alt="Unesco Site"
+              style={{ width: 300, height: 300 }}
             />
             <div className="caption">
               <p>Lorem ipsum...</p>
