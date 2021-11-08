@@ -22,8 +22,8 @@ jobs:
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
           usedocker: true
           docker_build_args: |
-            REACT_APP_TITLE
+            REACT_APP_FLICKR_API_KEY
             REACT_APP_SUBTITLE
         env:
-          REACT_APP_TITLE: ${{ secrets.REACT_APP_TITLE }}
+          REACT_APP_FLICKR_API_KEY: ${{ secrets.REACT_APP_FLICKR_API_KEY }}
           REACT_APP_SUBTITLE: ${{ secrets.REACT_APP_SUBTITLE }}
