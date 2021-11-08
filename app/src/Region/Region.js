@@ -6,12 +6,13 @@ import { TabContent, TabPane, Container, Row, Col } from "reactstrap";
 
 // core components
 import DemoFooter from "components/Footers/DemoFooter.js";
-import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
+import RegionPageHeader from "components/Headers/RegionPageHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
 import * as apiClient from "../apiClient";
-import JsonData from "../unesco.json"; // temp for debugging DO NOT COMMIT
-// BELOW IS TEMP DB
+import { createMarkup } from "../utils.js";
+
+// Map Url param to region name for DB look up.
 const paramsToRegion = {
   ena: "Europe and North America",
   asa: "Asia and the Pacific",
@@ -19,28 +20,6 @@ const paramsToRegion = {
   afr: "Africa",
   arb: "Arab States",
 };
-
-function preProcessRegionTable(data) {
-  let idCnt = 0;
-  return data
-    .map((row) => {
-      return {
-        id: idCnt++,
-        region: row.region,
-        site: row.site,
-        states: row.states, // state are string, despite holding multiple states sometimes.
-        unique_number: row.unique_number,
-      };
-    })
-    .filter((el) => el);
-}
-
-// simulates sql select * where region = region
-function sqlQuerySimulation(data, param) {
-  return data.filter((row) => row.region === paramsToRegion[param]);
-}
-
-// ABOVE IS TEMPORARY FOR DB PURPOSES
 
 // Formats backend data to be consumed by react.
 function createStateToSite(data) {
@@ -58,37 +37,31 @@ function createStateToSite(data) {
   }
   return statesToSite;
 }
+
 ////////////////////////////////////Region Page////////////////////////////////////
 
 function Region() {
-  const [region, setRegions] = React.useState([]);
+  const { code } = useParams();
+  const currentRegion = paramsToRegion[code];
+  //hooks
+  const [region, setRegion] = React.useState([]);
+  const [statesToSite, setStatesToSite] = React.useState(new Map());
 
-  const loadRegions = async () =>
-    setRegions(await apiClient.getRegions(region));
+  const loadRegion = async () =>
+    setRegion(await apiClient.getRegion(currentRegion));
 
   React.useEffect(() => {
-    loadRegions();
+    loadRegion();
   }, []);
 
+  React.useEffect(() => {
+    setStatesToSite(createStateToSite(region));
+  }, [region]);
+
   const [activeTab, setActiveTab] = React.useState("1");
-  let { code } = useParams();
-  // remove below
-  // const param = "afr"; // changes this to be real router string param
-  let data = preProcessRegionTable(JsonData.query.row);
-  console.log(JSON.stringify(data).replace(/'/g, "&apos;"));
-  data = sqlQuerySimulation(data, code);
-  console.log(data);
-  const statesToSite = createStateToSite(data);
-  // remove all above, for testing
 
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
-    // TODO query apiClient with incoming url param for region, e.g. ena/asa/lat/etc.
-    // pass response into a hook, formatted by createStateToSite()
-    // i.e. const statesToSite = createStateToSite(dataResponse);
-
-    // api call will look like:
-    //  const loadRegion = async () => setRegion(await apiClient.getRegion(paramsToRegion[param]));
     document.body.classList.add("landing-page");
     return function cleanup() {
       document.body.classList.remove("landing-page");
@@ -97,7 +70,7 @@ function Region() {
   return (
     <>
       <IndexNavbar />
-      <ProfilePageHeader />
+      <RegionPageHeader />
       <div className="section profile-content">
         <Container>
           <div className="owner">
@@ -111,7 +84,7 @@ function Region() {
             </div>
             <div className="name">
               <h1 className="title">
-                {data[0].region}
+                {currentRegion}
                 <br />
               </h1>
               {/* //region */}
@@ -145,16 +118,23 @@ function Region() {
                             {[...statesToSite.keys()].map((state, i) => (
                               <>
                                 <li key={i}>
-                                  <h3>{state}</h3>
+                                  <h4
+                                    dangerouslySetInnerHTML={createMarkup(
+                                      state.split(",").join(", "),
+                                    )}
+                                  />
                                   <ul className="">
                                     {[...statesToSite.get(state)].map(
                                       (site, j) => (
                                         <li key={j}>
-                                          {/* TODO: make real link with router to Site page. */}
                                           <Link
                                             to={"/site/" + site.unique_number}
                                           >
-                                            {site.site}
+                                            <span
+                                              dangerouslySetInnerHTML={createMarkup(
+                                                site.site,
+                                              )}
+                                            />
                                           </Link>
                                         </li>
                                       ),

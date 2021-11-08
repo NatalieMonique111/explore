@@ -8,8 +8,8 @@ import taskRouter from "./taskRouter.mjs";
 const app = express();
 
 app.use("/api/tasks", taskRouter);
-app.use("/api/regions", regionRouter);
-app.use("/api/regions", siteRouter);
+app.use("/api/region", regionRouter);
+app.use("/api/site", siteRouter);
 
 // Do not comment out or delete this end point. The React development server
 // won't start until it pings this end point successfully.
