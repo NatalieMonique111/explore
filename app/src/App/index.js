@@ -4,8 +4,6 @@ import { Routes, Route } from "react-router-dom";
 
 // core components
 
-import Region from "Region";
-import Site from "Site";
 import DemoFooter from "components/Footers/DemoFooter.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -23,6 +21,9 @@ import SectionNotifications from "views/index-sections/SectionNotifications.js";
 import SectionNucleoIcons from "views/index-sections/SectionNucleoIcons.js";
 import SectionProgress from "views/index-sections/SectionProgress.js";
 import SectionTypography from "views/index-sections/SectionTypography.js";
+
+import Region from "../Region/Region.js";
+import Site from "../Site/Site.js";
 
 // Keep as example for e2e requests, then delete
 // import Tasks from "../Tasks";

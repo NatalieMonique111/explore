@@ -2,9 +2,9 @@ export const getTasks = () => _get("/api/tasks");
 
 export const addTask = (name) => _post("/api/tasks", { name });
 
-export const getRegions = (region) => _get("/api/regions", { region });
+export const getRegion = (region) => _get(`/api/region/${region}`);
 
-export const getSites = (site) => _get("/api/sites", { site });
+export const getSite = (site) => _get(`/api/site/${site}`);
 
 const _get = async (url) => (await fetch(url)).json();
 

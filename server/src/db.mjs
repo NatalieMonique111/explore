@@ -11,11 +11,13 @@ export const getTasks = () => db.any("SELECT * FROM tasks");
 export const addTask = (name) =>
   db.one("INSERT INTO tasks(name) VALUES($<name>) RETURNING *", { name });
 
-export const getRegions = (region) =>
-  db.any("SELECT * FROM regions", { region });
+export const getRegion = (region) =>
+  db.any("SELECT * FROM regions WHERE region = $<region>", { region });
 
 export const getSites = (unique_number) =>
-  db.any("SELECT * FROM regions", { unique_number });
+  db.any("SELECT * FROM sites WHERE unique_number = $<unique_number>", {
+    unique_number,
+  });
 
 //create a new function that insert to a table, the new table will have one column of type XML
 //insert each item on row array, insert is here (in the database) will receive long xml string then insert it in new table .xml column, then use value.

@@ -11,47 +11,28 @@ import DemoFooter from "components/Footers/DemoFooter.js";
 import IndexNavbar from "components/Navbars/IndexNavbar";
 
 import * as apiClient from "../apiClient";
-import JsonData from "../unesco.json"; // temp for debugging
-
-// FOR CREATING DB DATA, until backend is impemented
-function preProcessRegionTable(data) {
-  return data
-    .map((row) => {
-      return {
-        unique_number: row.unique_number,
-        site: row.site,
-        states: row.states, // state are string, despite holding multiple states sometimes.
-        description: row.short_description,
-        category: row.category,
-        http_url: row.http_url,
-      };
-    })
-    .filter((el) => el);
-}
+import { createMarkup } from "../utils.js";
 
 ///////////////////////////////Site Page///////////////////////////////
-function findSite(data, id) {
-  return data.find((row) => row.unique_number === id);
-}
-
 function Site() {
-  //hooks
-  const [site, setSites] = React.useState([]);
-
-  const loadSites = async () => setSites(await apiClient.getRegions(site));
+  const { id } = useParams();
+  const [site, setSite] = React.useState({});
 
   React.useEffect(() => {
-    loadSites();
+    // Check if component is mounted after promise returns,
+    // otherwise error occurs and hook will not be loaded with response.
+    let isMounted = true;
+
+    if (isMounted) {
+      apiClient.getSite(id).then((r) => {
+        if (isMounted) {
+          return setSite(r[0]);
+        }
+      });
+    }
+
+    return () => (isMounted = false);
   }, []);
-  //
-  let { id } = useParams();
-  const data = findSite(JsonData.query.row, id);
-  console.log("Site Data", data, id);
-  const preprocessed = preProcessRegionTable(JsonData.query.row);
-  console.log(
-    "Preprocessed data",
-    JSON.stringify(preprocessed).replace(/'/g, "&apos;"),
-  );
 
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -59,7 +40,7 @@ function Site() {
     return function cleanup() {
       document.body.classList.remove("profile-page");
     };
-  });
+  }, []);
 
   ////////////////////Header//////////////////
   let pageHeader = React.createRef();
@@ -93,7 +74,7 @@ function Site() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>{data.site}</h1>
+            <h1 dangerouslySetInnerHTML={createMarkup(site.site)} />
           </div>
         </Container>
       </div>
@@ -103,12 +84,11 @@ function Site() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">{data.states}</h2>
+                <h2 dangerouslySetInnerHTML={createMarkup(site.states)} />
                 <br />
-                <h3>{data.category}</h3>
+                <h3 dangerouslySetInnerHTML={createMarkup(site.category)} />
                 <br />
-                <p className="description">{data.short_description}</p>
-
+                <div dangerouslySetInnerHTML={createMarkup(site.description)} />
                 <br />
               </Col>
             </Row>
@@ -133,7 +113,7 @@ function Site() {
             <Button
               className="btn-round"
               color="info"
-              href={data.http_url}
+              href={site.http_url}
               target="_blank"
               // onClick={(e) => e.preventDefault()}
             >
