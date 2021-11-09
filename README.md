@@ -6,15 +6,6 @@ single table in the database, and allows you to add rows to that table.
 
 [See the app in action][https://explore-our-world.herokuapp.com/].
 
-[![Deploy to Heroku][deploy-badge]][deploy-workflow]
-[![Reset Heroku DB][reset-badge]][reset-workflow]
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
-
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 ## Prerequisites
 
 ### Docker
