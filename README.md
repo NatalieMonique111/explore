@@ -4,7 +4,7 @@ End-to-end React app backed by an Express API server, persisting data to
 PostgreSQL database. The project has a basic interface that fetches data from a
 single table in the database, and allows you to add rows to that table.
 
-[See the app in action][https://explore-our-world.herokuapp.com/].
+[See the app in action](https://explore-our-world.herokuapp.com/).
 
 ## Prerequisites
 
