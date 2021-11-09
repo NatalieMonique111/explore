@@ -75,12 +75,12 @@ function Region() {
         <Container>
           <div className="owner">
             <div className="avatar">
-              {/* <img
+              <img
                 style={{ backgroundColor: "transparent" }}
                 alt="..."
                 className="img-circle img-no-padding img-responsive"
-                src={require("assets/img/globe.gif").default}
-              /> */}
+                src={require("assets/img/compass2.gif").default}
+              />
             </div>
             <div className="name">
               <h1 className="title">

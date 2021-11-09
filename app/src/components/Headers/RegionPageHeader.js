@@ -44,7 +44,7 @@ function RegionPageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/cosmic.jpeg").default + ")",
+            "url(" + require("assets/img/map.jpeg").default + ")",
         }}
         className="page-header page-header-xs"
         data-parallax={true}

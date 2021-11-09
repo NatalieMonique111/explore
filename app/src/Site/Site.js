@@ -24,9 +24,9 @@ function Site() {
     let isMounted = true;
 
     if (isMounted) {
-      apiClient.getSite(id).then((r) => {
+      apiClient.getSite(id).then((resp) => {
         if (isMounted) {
-          return setSite(r[0]);
+          return setSite(resp[0]);
         }
       });
     }
@@ -61,11 +61,10 @@ function Site() {
   return (
     <>
       <IndexNavbar />
-      {/* site header */}
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/daniel-olahh.jpg").default + ")",
+            "url(" + require("assets/img/sunrise.jpeg").default + ")",
         }}
         className="page-header"
         data-parallax={true}
@@ -98,7 +97,7 @@ function Site() {
         <div className="section section-dark text-center">
           <Container>
             <h2 className="title">Gallery</h2>
-            <Gallery />
+            <Gallery siteName={site.site} state={site.states} />
             <br />
           </Container>
         </div>
@@ -109,7 +108,7 @@ function Site() {
             backgroundColor: "transparent",
           }}
         >
-          <Container>
+          <Container className="text-center">
             <Button
               className="btn-round"
               color="info"
@@ -117,7 +116,7 @@ function Site() {
               target="_blank"
               // onClick={(e) => e.preventDefault()}
             >
-              UNESCO
+              View More at UNESCO
             </Button>
           </Container>
         </div>
