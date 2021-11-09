@@ -45,7 +45,7 @@ server.
 2. You can choose to edit `.env` or just use as-is.
 
 [See the PostgreSQL Docker image documentation for more
-information][dh-postgres].
+information](https://hub.docker.com/_/postgres).
 
 ## Start
 
