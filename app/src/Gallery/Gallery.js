@@ -38,7 +38,7 @@ const Gallery = ({ siteName, state }) => {
     const data = {
       method: "flickr.photos.search",
       api_key: FLICKR_API_KEY,
-      text: `${siteName} ${state} Unesco`, // Search Text
+      text: `${siteName} Unesco ${state}`, // Search Text
       sort: "interestingness-desc",
       per_page: 100,
       license: "4",

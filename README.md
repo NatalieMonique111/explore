@@ -1,4 +1,4 @@
-# Starter Project With PostgreSQL, Express, and React
+# Explore Our World
 
 End-to-end React app backed by an Express API server, persisting data to
 PostgreSQL database. The project has a basic interface that fetches data from a

@@ -118,6 +118,7 @@ function Region() {
                             {[...statesToSite.keys()].map((state, i) => (
                               <>
                                 <li key={i}>
+                                  {" "}
                                   <h4
                                     dangerouslySetInnerHTML={createMarkup(
                                       state.split(",").join(", "),
@@ -128,6 +129,7 @@ function Region() {
                                       (site, j) => (
                                         <li key={j}>
                                           <Link
+                                            style={{ color: "#000058" }}
                                             to={"/site/" + site.unique_number}
                                           >
                                             <span
