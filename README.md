@@ -14,15 +14,15 @@ Docker first before continuing.
 
 Use one of these methods:
 
-- Use [Homebrew][] on macOS: `brew install --cask docker`
-- [Follow the instructions on the Docker website][docker-www]
+- Use Homebrew on macOS: `brew install --cask docker`
+- [Follow the instructions on the Docker website](https://www.docker.com/)
 
 Once you've installed Docker Desktop, you'll need to launch the app. On macOS,
 it's located in `/Applications/Docker`.
 
 ### Node
 
-You'll need to install Node v14 or above. [`nvm`][nvm] is highly recommended.
+You'll need to install Node v14 or above. [`nvm`](https://nodejs.org/en/) is highly recommended.
 
 ### Install NPM Packages
 
@@ -55,7 +55,7 @@ npm start
 
 Visit <http://localhost:3000>.
 
-## Shut Down the Development Environment
+## Shut Down
 
 1. `Ctrl-C` to stop the Express and React development servers.
 1. `npm stop` to stop and destroy the PostgreSQL Docker container. Don't worry,
