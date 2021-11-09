@@ -1,12 +1,11 @@
 # Explore Our World
 
-End-to-end React app backed by an Express API server, persisting data to
-PostgreSQL database. The project has a basic interface that fetches data from a
-single table in the database, and allows you to add rows to that table.
+Explore Our World is a React app backed by an Express API server, persisting data from a
+PostgreSQL database populated with UNESCO world heritage site data. The project has a basic interface that fetches images, if available, from a Flickr API.
 
 [See the app in action](https://explore-our-world.herokuapp.com/).
 
-## Prerequisites
+## To Use Locally
 
 ### Docker
 
@@ -24,14 +23,6 @@ it's located in `/Applications/Docker`.
 ### Node
 
 You'll need to install Node v14 or above. [`nvm`][nvm] is highly recommended.
-
-## Create a New Repository From This Template
-
-[Generate a new repository from this template](https://github.com/gsong/express-react-project-starter/generate).
-
-[See GitHub documentation for more details](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-## Set Up the Development Environment
 
 ### Install NPM Packages
 
@@ -56,20 +47,7 @@ server.
 [See the PostgreSQL Docker image documentation for more
 information][dh-postgres].
 
-### Initialize the Database
-
-Let's set up the database server, create the application database, and seed it
-with some data. You only need to do this the first time you set up your
-development environment.
-
-```sh
-npm run db:init
-```
-
-ℹ️ If you ever need to start over with the database, you can run this command
-again which will delete your existing data and start from scratch.
-
-## Start the Development Environment
+## Start
 
 ```sh
 npm start
@@ -83,18 +61,8 @@ Visit <http://localhost:3000>.
 1. `npm stop` to stop and destroy the PostgreSQL Docker container. Don't worry,
    your data is safe.
 
-## Need to Start a `psql` Session?
-
-```sh
-npm run psql
-```
-
 ## Want More Details?
 
 - [Read about the application stack](docs/application-stack.md).
 - [Read about the Express server](server/README.md).
 - [Read about the React app](app/README.md).
-
-## Deployment
-
-[Read about setting up and deploying to Heroku](docs/deployment.md).
