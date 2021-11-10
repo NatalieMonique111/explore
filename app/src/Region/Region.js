@@ -2,7 +2,7 @@ import React from "react";
 
 // reactstrap components
 import { useParams, Link } from "react-router-dom";
-import { TabContent, TabPane, Container, Row, Col } from "reactstrap";
+import { TabPane, Container, Row, Col } from "reactstrap";
 
 // core components
 import MainFooter from "components/Footers/MainFooter.js";
