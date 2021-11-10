@@ -3,7 +3,7 @@
 Explore Our World is a React app backed by an Express API server, persisting data from a
 PostgreSQL database populated with UNESCO world heritage site data. The project has a basic interface that fetches images, if available, from a Flickr API.
 
-[See the app in action](https://explore-our-world.herokuapp.com/).
+[See the app in action!](https://explore-our-world.herokuapp.com/).
 
 ## To Use Locally
 
@@ -55,14 +55,21 @@ npm start
 
 Visit <http://localhost:3000>.
 
+## Flickr API
+
+1. - [Apply for free Flickr API](https://www.flickr.com/services/apps/create/apply/). 
+2. - create a config.js file, place key data here.
+3. - place config.js in .gitignore.
+
 ## Shut Down
 
 1. `Ctrl-C` to stop the Express and React development servers.
-1. `npm stop` to stop and destroy the PostgreSQL Docker container. Don't worry,
+2. `npm stop` to stop and destroy the PostgreSQL Docker container. Don't worry,
    your data is safe.
 
 ## Want More Details?
-
+- [Access UNESCO World Heritage Sites XML data](https://whc.unesco.org/en/list/).
+- [Read about the Flickr API](https://www.flickr.com/services/developer/api/).
 - [Read about the application stack](docs/application-stack.md).
 - [Read about the Express server](server/README.md).
 - [Read about the React app](app/README.md).
