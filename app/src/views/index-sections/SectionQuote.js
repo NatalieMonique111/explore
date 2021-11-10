@@ -20,22 +20,11 @@
 import React from "react";
 
 // reactstrap components
-import {
-  // Button,
-  Card,
-  // Form,
-  // Input,
-  // InputGroupAddon,
-  // InputGroupText,
-  // InputGroup,
-  Container,
-  // Row,
-  Col,
-} from "reactstrap";
+import { Card, Container, Col } from "reactstrap";
 
 // core components
 
-function SectionLogin() {
+function SectionQuote() {
   return (
     <>
       <div
@@ -59,10 +48,7 @@ function SectionLogin() {
                 </p>
                 <br />
 
-                <footer
-                  // style={{ color: "white" }}
-                  className="blockquote-footer"
-                >
+                <footer className="blockquote-footer">
                   UNESCO World Heritage Centre{" "}
                   <cite title="source Title">World Heritage</cite>
                 </footer>
@@ -75,4 +61,4 @@ function SectionLogin() {
   );
 }
 
-export default SectionLogin;
+export default SectionQuote;

@@ -5,7 +5,7 @@ import { useParams, Link } from "react-router-dom";
 import { TabContent, TabPane, Container, Row, Col } from "reactstrap";
 
 // core components
-import DemoFooter from "components/Footers/DemoFooter.js";
+import MainFooter from "components/Footers/MainFooter.js";
 import RegionPageHeader from "components/Headers/RegionPageHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
@@ -157,7 +157,7 @@ function Region() {
           </TabContent>
         </Container>
       </div>
-      <DemoFooter />
+      <MainFooter />
     </>
   );
 }

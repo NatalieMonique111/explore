@@ -7,7 +7,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 // reactstrap components
 import Gallery from "Gallery/Gallery.js";
 // core components
-import DemoFooter from "components/Footers/DemoFooter.js";
+import MainFooter from "components/Footers/MainFooter.js";
 import IndexNavbar from "components/Navbars/IndexNavbar";
 
 import * as apiClient from "../apiClient";
@@ -111,7 +111,7 @@ function Site() {
           </Container>
         </div>
       </div>
-      <DemoFooter />
+      <MainFooter />
     </>
   );
 }

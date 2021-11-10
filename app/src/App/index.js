@@ -4,14 +4,14 @@ import { Routes, Route } from "react-router-dom";
 
 // core components
 
-import DemoFooter from "components/Footers/DemoFooter.js";
+import MainFooter from "components/Footers/MainFooter.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 // index sections
 import SectionCarousel from "views/index-sections/SectionCarousel.js";
 import SectionDark from "views/index-sections/SectionDark.js";
-import SectionLogin from "views/index-sections/SectionLogin.js";
 import SectionNavbars from "views/index-sections/SectionNavbars.js";
+import SectionQuote from "views/index-sections/SectionQuote.js";
 
 import Region from "../Region/Region.js";
 import Site from "../Site/Site.js";
@@ -42,8 +42,8 @@ const Home = () => (
         <SectionNavbars />
       </section>
       <SectionDark />
-      <SectionLogin />
-      <DemoFooter />
+      <SectionQuote />
+      <MainFooter />
     </div>
   </>
 );
