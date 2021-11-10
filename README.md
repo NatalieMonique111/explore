@@ -58,7 +58,7 @@ Visit <http://localhost:3000>.
 ## Flickr API
 
 1.  [Apply for a free Flickr API](https://www.flickr.com/services/apps/create/apply/). 
-2.  create a config.js file, place key data here.
+2.  create a config.js file, to place key data.
 3.  place config.js in .gitignore.
 
 ## Shut Down
