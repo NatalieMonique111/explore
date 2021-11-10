@@ -63,6 +63,8 @@ Visit <http://localhost:3000>.
 4.  Import FLICKR_API_KEY from config.js
 5.  Place FLICKR_API_KEY as value for the data object property: api_key.
 
+- [Note: Adding Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
+
 ## Shut Down
 
 1. `Ctrl-C` to stop the Express and React development servers.

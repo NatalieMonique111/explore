@@ -68,7 +68,7 @@ const Gallery = ({ siteName, state }) => {
     <>
       <br />
       {/* <!-- Photo Grid --> */}
-      <div>
+      <div data-testid="test-1">
         <div
           className="rowx"
           style={{ color: "white", justifyContent: "center" }}
