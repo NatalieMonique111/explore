@@ -60,7 +60,7 @@ Visit <http://localhost:3000>.
 1.  [Apply for a free Flickr API key](https://www.flickr.com/services/apps/create/apply/). 
 2.  Create a config.js file, to place key data.
 3.  Place config.js in .gitignore
-4.  Import FLICKR_API_KEY from ./config.js
+4.  Import FLICKR_API_KEY from config.js
 5.  Place FLICKR_API_KEY as value for the data object property: api_key. 
 
 ## Shut Down
