@@ -10,3 +10,6 @@ describe("App", () => {
     screen.debug();
   });
 });
+
+//npm run test-react
+//react-test-library
