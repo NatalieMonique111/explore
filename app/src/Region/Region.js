@@ -58,8 +58,6 @@ function Region() {
     setStatesToSite(createStateToSite(region));
   }, [region]);
 
-  const [activeTab, setActiveTab] = React.useState("1");
-
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -99,7 +97,7 @@ function Region() {
           <br />
           <div className="nav-tabs-navigation"></div>
           {/* Tab panes */}
-          <TabContent className="following" activeTab={activeTab}>
+          <section className="following">
             <TabPane tabId="1" id="follows">
               <Row>
                 <Col className="ml-auto mr-auto" md="6">
@@ -154,7 +152,7 @@ function Region() {
                 </Col>
               </Row>
             </TabPane>
-          </TabContent>
+          </section>
         </Container>
       </div>
       <MainFooter />
