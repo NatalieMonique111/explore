@@ -38,7 +38,7 @@ const Gallery = ({ siteName, state }) => {
     const data = {
       method: "flickr.photos.search",
       api_key: FLICKR_API_KEY,
-      text: `${siteName} Unesco`, // Search Text
+      text: `${siteName} ${state}`, // Search Text
       sort: "interestingness-desc",
       per_page: 100,
       license: "4",
@@ -66,22 +66,32 @@ const Gallery = ({ siteName, state }) => {
   }, [siteName, state]);
   return (
     <>
+      <br />
       {/* <!-- Photo Grid --> */}
       <div>
-        <div className="rowx">
-          {[0, 1, 2, 3].map((col, i) => (
-            <div className="columnx" key={i}>
-              {photos.map((arr, j) => (
-                <a
-                  href={getFlickrImageURL(arr[i], "b")}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <img alt="" key={j} src={getFlickrImageURL(arr[i], "q")} />
-                </a>
-              ))}
-            </div>
-          ))}
+        <div
+          className="rowx"
+          style={{ color: "white", justifyContent: "center" }}
+        >
+          {photos.length > 0
+            ? [0, 1, 2, 3].map((col, i) => (
+                <div className="columnx" key={i}>
+                  {photos.map((arr, j) => (
+                    <a
+                      href={getFlickrImageURL(arr[i], "b")}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt=""
+                        key={j}
+                        src={getFlickrImageURL(arr[i], "q")}
+                      />
+                    </a>
+                  ))}
+                </div>
+              ))
+            : "No images available"}
         </div>
       </div>
     </>

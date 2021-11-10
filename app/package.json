@@ -7,7 +7,8 @@
     "eject": "react-scripts eject",
     "eslint": "eslint . --ext js,mjs",
     "start": "bin/start-server.sh",
-    "test": "react-scripts test"
+    "test-react": "react-scripts test",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +47,9 @@
     "@testing-library/user-event": "^13.0.2",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^26.6.0",
     "node-sass": "^6.0.1",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "react-test-renderer": "^17.0.2"
   }
 }
