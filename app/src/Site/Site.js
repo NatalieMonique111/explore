@@ -77,7 +77,10 @@ function Site() {
                 <br />
                 <h3 dangerouslySetInnerHTML={createMarkup(site.category)} />
                 <br />
-                <div dangerouslySetInnerHTML={createMarkup(site.description)} />
+                <div
+                  style={{ textAlign: "left" }}
+                  dangerouslySetInnerHTML={createMarkup(site.description)}
+                />
                 <br />
               </Col>
             </Row>
