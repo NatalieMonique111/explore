@@ -5,7 +5,7 @@ PostgreSQL database populated with UNESCO world heritage site data. The project 
 
 [See the app in action](https://explore-our-world.herokuapp.com/).
 
-<img src="https://photos.google.com/photo/AF1QipPG8iphqlAoF0MsbDPykVSuFifWEk3sqQSf4-ad">
+<img src="img/explore.png">
 
 ## To Use Locally
 
