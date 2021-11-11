@@ -76,7 +76,7 @@ Visit <http://localhost:3000>.
 2.  Create a config.js file, to place key data.
 3.  Place config.js in .gitignore
 4.  Import FLICKR_API_KEY from config.js
-5.  Place FLICKR_API_KEY as the value for the data object property: api_key. This will be in the Gallery component.
+5.  In the Gallery component, place FLICKR_API_KEY as the value for the data object property: api_key.
 
 [Note: Adding Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
 
@@ -88,8 +88,35 @@ Visit <http://localhost:3000>.
 
 ## Want More Details?
 
-- [Access UNESCO World Heritage Sites XML data](https://whc.unesco.org/en/list/).
+- [Access UNESCO world heritage sites XML data](https://whc.unesco.org/en/list/).
 - [Read about the Flickr API](https://www.flickr.com/services/developer/api/).
 - [Read about the application stack](docs/application-stack.md).
 - [Read about the Express server](server/README.md).
 - [Read about the React app](app/README.md).
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <!-- <td align="center"><a href="https://github.com/bachtet"><img src="https://avatars.githubusercontent.com/u/23301117?v=4" width="100px;" alt=""/><br /><sub><b>Lee Sutherland</b></sub></a><br /><a href="" title="Bug reports">🐛</a> <a href="#ideas-aedward8" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-aedward8" title="Answering Questions">💬</a> <a href="#userTesting-aedward8" title="User Testing">📓</a></td> -->
+    <td align="center"><a href="https://github.com/gsong"><img src="https://avatars.githubusercontent.com/u/607420?v=4?s=100" width="100px;" alt=""/><br /><sub><b>George Song</b></sub></a><br /><a href="https://github.com/gsong/express-react-project-example/commits?author=gsong" title="Code">💻</a> <a href="https://github.com/gsong/express-react-project-example/commits?author=gsong" title="Documentation">📖</a> <a href="#infra-gsong" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-gsong" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/sinuheg"><img src="https://avatars.githubusercontent.com/u/14079734?v=4" width="100px;" alt=""/><br /><sub><b>Sinuhe Guerra</b></sub></a><br /><a href="" title="Bug reports">🐛</a> <a href="#ideas-aedward8" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-aedward8" title="Answering Questions">💬</a> <a href="#userTesting-aedward8" title="User Testing">📓</a></td>
+    <td align="center"><a href="https://github.com/jenhuynh"><img src="https://avatars.githubusercontent.com/u/15962197?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jen Huynh</b></sub></a><br /><a href="https://github.com/gsong/express-react-project-example/issues?q=author%3Ajenhuynh" title="Bug reports">🐛</a><a href="#userTesting-jenhuynh" title="User Testing">📓</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.tabbykatz.com/"><img src="https://avatars.githubusercontent.com/u/55110763?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tabitha O'Melay</b></sub></a><br /><a href="" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/smgraywood"><img src="https://avatars.githubusercontent.com/u/81881720?v=4" width="100px;" alt=""/><br /><sub><b>Sarah Graywood</b></sub></a><br /><a href="" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/Shaylan7"><img src="https://avatars.githubusercontent.com/u/80442267?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shaylan7</b></sub></a><br /><a href="#userTesting-xiaozhong21" title="User Testing">📓</a><a href="" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/xiaozhong21"><img src="https://avatars.githubusercontent.com/u/11522217?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Xiao Zhong</b></sub></a><br /><a href="#question-xiaozhong21" title="Answering Questions">💬</a> <a href="#userTesting-xiaozhong21" title="User Testing">📓</a><a href="" title="Reviewed Pull Requests">👀</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
