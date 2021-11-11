@@ -2,10 +2,10 @@ import React from "react";
 
 // reactstrap components
 import { useParams, Link } from "react-router-dom";
-import { TabContent, TabPane, Container, Row, Col } from "reactstrap";
+import { TabPane, Container, Row, Col } from "reactstrap";
 
 // core components
-import DemoFooter from "components/Footers/DemoFooter.js";
+import MainFooter from "components/Footers/MainFooter.js";
 import RegionPageHeader from "components/Headers/RegionPageHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
@@ -58,8 +58,6 @@ function Region() {
     setStatesToSite(createStateToSite(region));
   }, [region]);
 
-  const [activeTab, setActiveTab] = React.useState("1");
-
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -75,12 +73,12 @@ function Region() {
         <Container>
           <div className="owner">
             <div className="avatar">
-              {/* <img
+              <img
                 style={{ backgroundColor: "transparent" }}
                 alt="..."
                 className="img-circle img-no-padding img-responsive"
-                src={require("assets/img/globe.gif").default}
-              /> */}
+                src={require("assets/img/compass2.gif").default}
+              />
             </div>
             <div className="name">
               <h1 className="title">
@@ -99,7 +97,7 @@ function Region() {
           <br />
           <div className="nav-tabs-navigation"></div>
           {/* Tab panes */}
-          <TabContent className="following" activeTab={activeTab}>
+          <section className="following">
             <TabPane tabId="1" id="follows">
               <Row>
                 <Col className="ml-auto mr-auto" md="6">
@@ -118,6 +116,7 @@ function Region() {
                             {[...statesToSite.keys()].map((state, i) => (
                               <>
                                 <li key={i}>
+                                  {" "}
                                   <h4
                                     dangerouslySetInnerHTML={createMarkup(
                                       state.split(",").join(", "),
@@ -128,6 +127,7 @@ function Region() {
                                       (site, j) => (
                                         <li key={j}>
                                           <Link
+                                            style={{ color: "#000058" }}
                                             to={"/site/" + site.unique_number}
                                           >
                                             <span
@@ -152,10 +152,10 @@ function Region() {
                 </Col>
               </Row>
             </TabPane>
-          </TabContent>
+          </section>
         </Container>
       </div>
-      <DemoFooter />
+      <MainFooter />
     </>
   );
 }

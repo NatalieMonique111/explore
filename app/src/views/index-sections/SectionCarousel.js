@@ -35,21 +35,46 @@ import {
 const items = [
   {
     src: require("assets/img/brihadishvara.jpeg").default,
-    altText: "",
-    captionHeader: "Brihadishwara Temple",
+    altText: "Brihadishwara Temple",
+    captionHeader: (
+      <a
+        style={{ position: "relative", textDecoration: "underline" }}
+        href="/site/280"
+      >
+        Brihadishwara Temple
+      </a>
+    ),
     caption: "Tamil Nadu, India",
+    href: "/site/280",
   },
   {
-    src: require("assets/img/pyramids-giza.jpeg").default,
-    altText: "Somewhere else",
-    captionHeader: "Pyramids",
-    caption: "Giza, Egypt",
+    src: require("assets/img/kathmandu.jpeg").default,
+    altText: "Boudha Stupa",
+    captionHeader: (
+      <a
+        style={{
+          position: "relative",
+          textDecoration: "underline",
+        }}
+        href="/site/1448"
+      >
+        Boudha
+      </a>
+    ),
+    caption: "Nepal",
   },
   {
-    src: require("assets/img/kilimanjaro.jpeg").default,
-    altText: "Here it is",
-    captionHeader: "Kilimanjaro",
-    caption: "Tanzania",
+    src: require("assets/img/yosemite.jpeg").default,
+    altText: "Yosemite Forest",
+    captionHeader: (
+      <a
+        style={{ position: "relative", textDecoration: "underline" }}
+        href="/site/347"
+      >
+        Yosemite
+      </a>
+    ),
+    caption: "Unites States of America",
   },
 ];
 
@@ -113,6 +138,7 @@ function SectionCarousel() {
                           captionText={item.caption}
                           captionHeader={item.captionHeader}
                         />
+
                         <img src={item.src} alt={item.altText} />
                         <CarouselCaption
                           captionText={item.caption}
