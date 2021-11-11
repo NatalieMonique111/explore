@@ -51,7 +51,7 @@ information](https://hub.docker.com/_/postgres).
 
 Let's set up the database server, create the application database, and seed it
 with the UNESCO data. You only need to do this the first time you set up your
-development environment.
+local environment.
 
 ```sh
 npm run db:init
