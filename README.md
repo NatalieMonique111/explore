@@ -47,6 +47,19 @@ server.
 [See the PostgreSQL Docker image documentation for more
 information](https://hub.docker.com/_/postgres).
 
+## Initialize the Database
+
+Let's set up the database server, create the application database, and seed it
+with the UNESCO data. You only need to do this the first time you set up your
+development environment.
+
+```sh
+npm run db:init
+```
+
+ℹ️ If you ever need to start over with the database, you can run this command
+again which will delete your existing data and start from scratch.
+
 ## Start
 
 ```sh
@@ -61,9 +74,9 @@ Visit <http://localhost:3000>.
 2.  Create a config.js file, to place key data.
 3.  Place config.js in .gitignore
 4.  Import FLICKR_API_KEY from config.js
-5.  Place FLICKR_API_KEY as value for the data object property: api_key.
+5.  Place FLICKR_API_KEY as the value for the data object property: api_key. This will be in the Gallery component.
 
-- [Note: Adding Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
+[Note: Adding Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
 
 ## Shut Down
 
