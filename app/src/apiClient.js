@@ -1,7 +1,3 @@
-export const getTasks = () => _get("/api/tasks");
-
-export const addTask = (name) => _post("/api/tasks", { name });
-
 export const getRegion = (region) => _get(`/api/region/${region}`);
 
 export const getSite = (site) => _get(`/api/site/${site}`);

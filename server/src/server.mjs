@@ -3,11 +3,9 @@ import mime from "mime-types";
 
 import regionRouter from "./regionRouter.mjs";
 import siteRouter from "./siteRouter.mjs";
-import taskRouter from "./taskRouter.mjs";
 
 const app = express();
 
-app.use("/api/tasks", taskRouter);
 app.use("/api/region", regionRouter);
 app.use("/api/site", siteRouter);
 

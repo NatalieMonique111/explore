@@ -6,11 +6,6 @@ load_dotenv_if_exists();
 
 const db = initDb();
 
-export const getTasks = () => db.any("SELECT * FROM tasks");
-
-export const addTask = (name) =>
-  db.one("INSERT INTO tasks(name) VALUES($<name>) RETURNING *", { name });
-
 export const getRegion = (region) =>
   db.any("SELECT * FROM regions WHERE region = $<region>", { region });
 
