@@ -3,8 +3,6 @@
 Explore Our World is a React app backed by an Express API server, persisting data from a
 PostgreSQL database populated with UNESCO world heritage site data. The project has a basic interface that fetches images, if available, from a Flickr API.
 
-[See the app in action](https://explore-our-world.herokuapp.com/).
-
 <img src="img/explore.png">
 
 ## To Use Locally
